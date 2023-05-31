@@ -9,7 +9,25 @@ import SwiftUI
 
 struct MenuItemView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            if let image = UIImage(named: "0_lg"){
+                Image(uiImage: image)
+//                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .cornerRadius(10)
+            }else{
+                Image("surfboard_lg")
+            }
+            VStack(alignment: .leading){
+                Text("Margherita")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color("MySurfColor"))
+                ScrollView {
+                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo odio et mi iaculis posuere. Nam cursus aliquam enim, non venenatis lectus dapibus et. Nulla consectetur, leo non molestie condimentum, magna lectus auctor erat, et tincidunt mauris eros vitae leo. Ut viverra nunc ac ligula tempor euismod. Proin at risus.")
+                        .font(.custom("Geogia", size: 18, relativeTo: .body))
+                }
+            }
+        }
     }
 }
 

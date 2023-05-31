@@ -14,6 +14,13 @@
 		D2BE16E92A2636B30047B105 /* MyPizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE16E82A2636B30047B105 /* MyPizzaTests.swift */; };
 		D2BE16F32A2636B30047B105 /* MyPizzaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE16F22A2636B30047B105 /* MyPizzaUITests.swift */; };
 		D2BE16F52A2636B30047B105 /* MyPizzaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE16F42A2636B30047B105 /* MyPizzaUITestsLaunchTests.swift */; };
+		D2BE17022A264CF00047B105 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE17012A264CF00047B105 /* OrderView.swift */; };
+		D2BE17042A264D530047B105 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE17032A264D530047B105 /* MenuView.swift */; };
+		D2BE17062A264E010047B105 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE17052A264E010047B105 /* MenuItemView.swift */; };
+		D2BE17082A264E0F0047B105 /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE17072A264E0F0047B105 /* MenuRowView.swift */; };
+		D2BE170A2A264E1F0047B105 /* OrderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE17092A264E1F0047B105 /* OrderRowView.swift */; };
+		D2BE170E2A26507F0047B105 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE170D2A26507F0047B105 /* HeaderView.swift */; };
+		D2BE17102A2656240047B105 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE170F2A2656240047B105 /* RatingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		D2BE16EE2A2636B30047B105 /* MyPizzaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPizzaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BE16F22A2636B30047B105 /* MyPizzaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPizzaUITests.swift; sourceTree = "<group>"; };
 		D2BE16F42A2636B30047B105 /* MyPizzaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPizzaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D2BE17012A264CF00047B105 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		D2BE17032A264D530047B105 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		D2BE17052A264E010047B105 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		D2BE17072A264E0F0047B105 /* MenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowView.swift; sourceTree = "<group>"; };
+		D2BE17092A264E1F0047B105 /* OrderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRowView.swift; sourceTree = "<group>"; };
+		D2BE170D2A26507F0047B105 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D2BE170F2A2656240047B105 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +112,13 @@
 				D2BE16D92A2636B20047B105 /* ContentView.swift */,
 				D2BE16DB2A2636B30047B105 /* Assets.xcassets */,
 				D2BE16DD2A2636B30047B105 /* Preview Content */,
+				D2BE17012A264CF00047B105 /* OrderView.swift */,
+				D2BE17032A264D530047B105 /* MenuView.swift */,
+				D2BE17052A264E010047B105 /* MenuItemView.swift */,
+				D2BE17072A264E0F0047B105 /* MenuRowView.swift */,
+				D2BE17092A264E1F0047B105 /* OrderRowView.swift */,
+				D2BE170D2A26507F0047B105 /* HeaderView.swift */,
+				D2BE170F2A2656240047B105 /* RatingsView.swift */,
 			);
 			path = MyPizza;
 			sourceTree = "<group>";
@@ -257,8 +278,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2BE17022A264CF00047B105 /* OrderView.swift in Sources */,
+				D2BE17042A264D530047B105 /* MenuView.swift in Sources */,
 				D2BE16DA2A2636B20047B105 /* ContentView.swift in Sources */,
 				D2BE16D82A2636B20047B105 /* MyPizzaApp.swift in Sources */,
+				D2BE17102A2656240047B105 /* RatingsView.swift in Sources */,
+				D2BE17082A264E0F0047B105 /* MenuRowView.swift in Sources */,
+				D2BE170A2A264E1F0047B105 /* OrderRowView.swift in Sources */,
+				D2BE17062A264E010047B105 /* MenuItemView.swift in Sources */,
+				D2BE170E2A26507F0047B105 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
