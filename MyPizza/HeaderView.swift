@@ -13,9 +13,13 @@ struct HeaderView: View {
             Image("surfBanner")
                 .resizable()
                 .scaledToFit()
+//                .scaledToFill()
+                .ignoresSafeArea()
             Text("MyPizza Company")
                 .font(.custom("Georgia", size: 30))
-                .foregroundColor(.white)
+//                .foregroundColor(.white)
+                .foregroundStyle(.regularMaterial)
+                .fontWeight(.semibold)
         }
     }
 }
