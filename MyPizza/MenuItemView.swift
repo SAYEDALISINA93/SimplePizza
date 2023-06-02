@@ -10,6 +10,7 @@ import SwiftUI
 struct MenuItemView: View {
     @State private var addedItem: Bool = false
     @Binding var item: MenuItem
+    @ObservedObject var orders: OrderModel
     var body: some View {
         VStack{
             HStack {
@@ -46,6 +47,7 @@ struct MenuItemView: View {
                 
                 Button{
                     addedItem = !addedItem
+                    orders.addOrder(item, quantity: 1)
                 }label: {
                     Spacer()
                     HStack(alignment:.center){
@@ -59,6 +61,7 @@ struct MenuItemView: View {
                     .padding(10)
                     Spacer()
                 }
+                .disabled(item.id < 0)
                 .cornerRadius(10)
                 .background(.red.opacity(0.5), in: Capsule())
                 .shadow(color: .gray, radius: 10, x: 2, y: 2)
@@ -69,6 +72,6 @@ struct MenuItemView: View {
 
 struct MenuItemView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuItemView(item: .constant(testMenuItem))
+        MenuItemView(item: .constant(testMenuItem), orders: OrderModel())
     }
 }

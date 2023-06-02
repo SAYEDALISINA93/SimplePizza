@@ -13,8 +13,8 @@ enum OrderType:String,CaseIterable{
     case delivery = "Delivery"
 }
 /// The Model to hold our orders.
-class OrderModel{
-    var orderItems:[OrderItem] = []
+class OrderModel: ObservableObject{
+    @Published var orderItems:[OrderItem] = []
     var customerName = "Customer Name"
     var orderType:OrderType = .takeout
     private var lastID:Int = 0
