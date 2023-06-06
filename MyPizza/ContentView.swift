@@ -16,6 +16,7 @@ struct ContentView: View {
         VStack {
             HeaderView()
                 .shadow(radius: 5)
+                .environment(\.colorScheme, .light)
             HStack {
                 Text("\(orders.orderItems.count) Orders")
                 Spacer()
@@ -42,7 +43,7 @@ struct ContentView: View {
         }
         .padding()
         .background(LinearGradient(colors: [ Color("Surf"), .green, Color("sky")], startPoint: .topLeading, endPoint: .bottom))
-
+        .environmentObject(orders)
     }
 }
 
