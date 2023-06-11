@@ -10,27 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var menu: [MenuItem]
     @StateObject var orders: OrderModel = OrderModel()
-    @State private var showOrder: Bool = false
+    @State private var showOrders: Bool = false
     @State private var selectedItem: MenuItem = noMenuItem
     var body: some View {
         VStack {
             HeaderView()
                 .shadow(radius: 5)
                 .environment(\.colorScheme, .light)
-            HStack {
-                Text("\(orders.orderItems.count) Orders")
-                Spacer()
-                Button{
-                    showOrder.toggle()
-                } label: {
-                    Image(systemName: showOrder ? "cart" : "menucard")
-                        .font(.title2)
-                }
-            
-            }
-            .foregroundStyle(.secondary)
-            .font(.title2)
-            if showOrder{
+            StatusBarView(showOrders: $showOrders)
+            if showOrders{
                 OrderView(orders: orders)
                     .cornerRadius(10)
             }else{
