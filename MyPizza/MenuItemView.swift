@@ -12,6 +12,8 @@ struct MenuItemView: View {
     @Binding var item: MenuItem
     @State var presentAlert: Bool = false
     @ObservedObject var orders: OrderModel
+    @State private var newOrder:Bool = true
+    @State private var order = noOrderItem
     var body: some View {
         VStack{
             HStack {
@@ -47,6 +49,7 @@ struct MenuItemView: View {
                 }
                 
                 Button{
+                    order = OrderItem(id: -999, item: item)
                     presentAlert = true
                 }label: {
                     Spacer()
@@ -65,16 +68,21 @@ struct MenuItemView: View {
                 .cornerRadius(10)
                 .background(.red.opacity(0.5), in: Capsule())
                 .shadow(color: .gray, radius: 10, x: 2, y: 2)
-                .alert("Buy a \(item.name)", isPresented: $presentAlert) {
-                    Button("Yes"){
-                        addedItem = true
-                        orders.addOrder(item, quantity: 1)
-                    }
-                    Button("No", role: .cancel){}
-                    Button("Make it double!"){
-                        addedItem = true
-                        orders.addOrder(item, quantity: 1)
-                    }
+//                .alert("Buy a \(item.name)", isPresented: $presentAlert) {
+//                    Button("Yes"){
+//                        addedItem = true
+//                        orders.addOrder(item, quantity: 1)
+//                    }
+//                    Button("No", role: .cancel){}
+//                    Button("Make it double!"){
+//                        addedItem = true
+//                        orders.addOrder(item, quantity: 1)
+//                    }
+//                }
+                .sheet(isPresented: $presentAlert){
+                    addedItem = true
+                } content: {
+                    OrderDetailView(orderItem: $order, presentSheet: $presentAlert, newOrder: $newOrder)
                 }
             }
         }
