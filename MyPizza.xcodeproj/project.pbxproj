@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D2317AFA2A376E1B0059B589 /* FavoriteTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2317AF92A376E1B0059B589 /* FavoriteTileView.swift */; };
+		D255355F2A40BDE4001C75D2 /* MenuView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D255355E2A40BDE4001C75D2 /* MenuView2.swift */; };
+		D25535612A40C029001C75D2 /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25535602A40C029001C75D2 /* MenuDetailView.swift */; };
 		D25ED7882A363E9200A81970 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25ED7872A363E9200A81970 /* StatusBarView.swift */; };
 		D25ED78A2A36424A00A81970 /* OrderItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25ED7892A36424A00A81970 /* OrderItemView.swift */; };
 		D25ED78C2A3648F700A81970 /* MenuItemTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25ED78B2A3648F700A81970 /* MenuItemTileView.swift */; };
@@ -52,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		D2317AF92A376E1B0059B589 /* FavoriteTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTileView.swift; sourceTree = "<group>"; };
+		D255355E2A40BDE4001C75D2 /* MenuView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView2.swift; sourceTree = "<group>"; };
+		D25535602A40C029001C75D2 /* MenuDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
 		D25ED7872A363E9200A81970 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
 		D25ED7892A36424A00A81970 /* OrderItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemView.swift; sourceTree = "<group>"; };
 		D25ED78B2A3648F700A81970 /* MenuItemTileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemTileView.swift; sourceTree = "<group>"; };
@@ -131,7 +135,9 @@
 			children = (
 				D2BE16D72A2636B20047B105 /* MyPizzaApp.swift */,
 				D2BE16D92A2636B20047B105 /* ContentView.swift */,
+				D255355E2A40BDE4001C75D2 /* MenuView2.swift */,
 				D25ED78B2A3648F700A81970 /* MenuItemTileView.swift */,
+				D25535602A40C029001C75D2 /* MenuDetailView.swift */,
 				D25ED78D2A36493900A81970 /* MenuGridView.swift */,
 				D2BAD1352A3B070C00357E85 /* OrderDetailView.swift */,
 				D2317AF92A376E1B0059B589 /* FavoriteTileView.swift */,
@@ -319,6 +325,7 @@
 				D2BE17022A264CF00047B105 /* OrderView.swift in Sources */,
 				D2BE17042A264D530047B105 /* MenuView.swift in Sources */,
 				D2317AFA2A376E1B0059B589 /* FavoriteTileView.swift in Sources */,
+				D25535612A40C029001C75D2 /* MenuDetailView.swift in Sources */,
 				D2BE17182A2897550047B105 /* OrderModel.swift in Sources */,
 				D2BE16DA2A2636B20047B105 /* ContentView.swift in Sources */,
 				D2BE16D82A2636B20047B105 /* MyPizzaApp.swift in Sources */,
@@ -328,6 +335,7 @@
 				D2BE17082A264E0F0047B105 /* MenuRowView.swift in Sources */,
 				D2BE170A2A264E1F0047B105 /* OrderRowView.swift in Sources */,
 				D2BE171B2A2897550047B105 /* MenuModel.swift in Sources */,
+				D255355F2A40BDE4001C75D2 /* MenuView2.swift in Sources */,
 				D25ED7882A363E9200A81970 /* StatusBarView.swift in Sources */,
 				D25ED78E2A36493900A81970 /* MenuGridView.swift in Sources */,
 				D2BE17192A2897550047B105 /* MenuItem.swift in Sources */,
